@@ -10,7 +10,7 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SentenceExtractor2 {
+public class SentenceExtractorStanfordNlp implements ISentenceExtractor {
 
     public String[] getSentences(String text) {
         Reader reader = new StringReader(text);

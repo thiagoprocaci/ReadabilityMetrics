@@ -9,7 +9,7 @@ import com.aliasi.tokenizer.Tokenizer;
 import com.aliasi.tokenizer.TokenizerFactory;
 
 /** Use SentenceModel to find sentence boundaries in text */
-public class SentenceExtractor {
+public class SentenceExtractor implements ISentenceExtractor {
 
 	final TokenizerFactory TOKENIZER_FACTORY = new IndoEuropeanTokenizerFactory();
 	final SentenceModel SENTENCE_MODEL = new IndoEuropeanSentenceModel();
